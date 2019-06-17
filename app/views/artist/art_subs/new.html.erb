@@ -1,0 +1,12 @@
+<br />
+<div class="booyah-box col-10 offset-1">
+  <h1>Submit a new art</h1>
+  <%= simple_form_for @art_sub, url: artist_art_subs_path do |f| %>
+  	<%= f.input :title %>
+  	<%= f.input :description %>
+  	<%= f.inupt :cost %>
+  	<br />
+  	<%= f.submit "Post It!", class: 'btn btn-primary' %>
+  <% end %>
+  <br />
+</div>
