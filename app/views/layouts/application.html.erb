@@ -11,151 +11,38 @@
   </head>
 
   <body>
-  <div class="title-banner">
-    <div class="title-text col-10 offset-1 text-center">
-      <h1>Xandrix Production</h1>
-    </div>  
-  </div>
   
-  <div class="booyah">
-    <div class="intro-banner">
-        <div class="intro col-10 offset-1 text-center ">
-            <h3>A FREELANCE <br>PHOTOGRAPHER <br> and <br>WEB DEVELOPER</h3>
-        </div>
-    </div>
-  </div>
-   
-<div class="booyah-main-photo col-10 offset-1">
-  <div class="photo-port">
-      <div class="photo_text col-10 offset-1 text-center">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Need to add links button for the portofolio that will take to a photo page with more photos -->
+      <a class="navbar-brand" href="#">Xpose</a>
 
-
-          <h4>Photography Portfolio</h4>
-      </div>
-      <div class="booyah-sm col-10 offset-1 text-center">
-        <div class="row feature text-center">
-          <div class="col-12 col-sm">
-            <div class="col-12 col-sm-12">
-                Example 1
-                <%= image_tag 'steph1.jpg', class: 'img-fluid' %>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm">
-            <div class="col-12 col-sm-12">
-                Example 2
-                <%= image_tag 'steph2.jpg', class: 'img-fluid' %>
-            </div>
-
-          </div>
-
-          <div class="col-12 col-sm">
-            <div class="col-12 col-sm-12">
-                Example 3
-                <%= image_tag 'steph3.jpg', class: 'img-fluid' %>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div class="photo_button col-10 offset-1 text-center">
-
-          <button type="button" class="btn btn-light">Click Here To See More</button>
-    </div>
-  </div>
-</div>
-
-
-<div class="booyah-main-web col-10 offset-1">
-  <div class="web-port">
-    <div class="web_text col-10 offset-1 text-center">
-
-
-      <!-- Need to add links button for the portofolio that will take to a website page with more details explaining what each website is -->
-
-    <h4>Web-Development Portfolio</h4>
-    </div>
-
-      <div class="booyah-sm col-10 offset-1 text-center">
-
-          <div class="row feature text-center">
-            
-<!--     Need to add a button for the link for each website
- -->            
-
-            <div class="col-12 col-sm">
-              <div class="col-12 col-sm-12">
-              Splurty Place_holder
-              <%= image_tag 'webscons1.jpg', class: 'img-fluid' %>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm">
-              <div class="col-12 col-sm-12">
-              Nomster Place_holder
-              <%= image_tag 'webscons1.jpg', class: 'img-fluid' %>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm">
-              <div class="col-12 col-sm-12">
-              Flixter Place_holder
-              <%= image_tag 'webscons1.jpg', class: 'img-fluid' %>
-              </div>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Footer -->
-<div class="booyah col-10 offset-1">
-
-<footer class="page-footer font-small teal pt-4">
-
-    <!-- Footer Text -->
-    <div class="container-fluid text-center text-md-left">
-
-      <!-- Grid row -->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-
-          <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">About Me</h5>
-          <p>A guy exploring his creative side. Practicing Photography and Web-Development</p>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-6 mb-md-0 mb-3">
-
-          <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">Contact</h5>
-          <li>
-            Email:
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Profile</a>
           </li>
-          <li>
-            Phone Number:
-          </li>
-        </div>
-        <!-- Grid column -->
-
+        </ul>
       </div>
-      <!-- Grid row -->
+    </nav>
 
-    </div>
-    <!-- Footer Text -->
-  </footer>
-</div>
-  <!-- Footer -->
+
+    <% if notice.present? %>
+       <p class="alert alert-info"><%= notice %></p>
+      <% end %>
+
+      <% if alert.present? %>
+       <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
+
+
+  
+  
+
+
 
 
 
