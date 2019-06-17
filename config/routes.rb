@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root 'main_pages#index'
 
-
+  resources :arts, only: [:index, :show]
   namespace :artist do
   	resources :arts, only: [:new, :create, :show]
   end
